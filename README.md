@@ -45,6 +45,18 @@ exports.msEureka = {
 ```js
 // {app_root}/config/config.default.js
 exports.msEureka = {
+    eureka: {
+        serviceUrl: [ 'http://192.168.200.111:8761', 'http://192.168.200.112:8761' ],
+        registerWithEureka: false,
+        fetchRegistry: true,
+        inspectIntervalInSecs: 30 * 1000,
+        proxy: { host: '111.152.57.29', port: 39083 }, // eureka和服务不在一个网络，可以使用代理
+    },
+    instance: {
+        app: ulmp,
+        ipAddr: '192.168.0.1',
+        port: 7004,
+    },
 };
 ```
 
