@@ -34,14 +34,8 @@ egg-ms-eureka 版本 | egg 2.x
 1.x | ❌
 
 ### 依赖的插件
-<!--
 
-如果有依赖其它插件，请在这里特别说明。如
-
-- schedule
-
-
--->
+- egg-schedule
 
 ## 开启插件
 
