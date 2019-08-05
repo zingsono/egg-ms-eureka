@@ -32,7 +32,7 @@ module.exports = {
             }
             return data;
         } catch (e) {
-            if (e.message.code) {
+            if (e.code) {
                 throw e;
             }
             this.logger.error(e);
