@@ -17,11 +17,11 @@ module.exports = appInfo => {
             fetchRegistry: true,
             inspectIntervalInSecs: 30 * 1000,
         },
-        instance: {
+        /* instance: {
             app: config.name,
             ipAddr: ip.address(),
-            port: config.cluster.listen.port,
-        },
+            port: 80,
+        },*/
     };
 
     return config;
